@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/websiteimage3.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.logo{
+    height:90px;
+   position: absolute; 
+   top: 4px;
+}
+h1{
+    color: #028a96;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+     background: linear-gradient(90deg, #D4AF37, #046d77);
+    -webkit-background-clip: text;
+     color: transparent;
+     font-size: 3rem;
+     font-family: 'Poppins', sans-serif;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+p{
+    text-align: center;
+        color: #0c091f; /* Dark gray for readability */
+        font-size: 1.2rem;
+        font-family: 'Open Sans', sans-serif;
+}
+nav{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    backdrop-filter: blur(10px);
+    padding: 10px,0;
+    position: fixed;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 40px;
+}
+nav a{
+  padding: 0,30px;  
+  text-decoration: none;
+  display: flex;
+  align-self: center;
+  color:white;
+  font-weight: 600;
+  font-family: 'Poppins';
+  font-size: 1.2rem;
+  padding: 12px,20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFCC00;
+    transform: scale(1.05);
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+.project-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sleek & modern */
+    font-size: 42px;
+    font-weight: 700;
+    color: #a87f2eb8;  /* Soft white for readability */
+    text-align: center;
+    display: block;
+    max-width: 95%;
+    margin: 30px auto;
+    padding: 15px 25px;
+    background: rgba(30, 42, 56, 0.85); /* Smooth dark navy with transparency */
+    border-radius: 10px;
+    white-space: normal;
+    line-height: 1.3;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s, letter-spacing 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    position: relative;
+    overflow: hidden;
+    margin-top: 90px;
+    cursor: pointer;
+}
+
+/* Smooth fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Gradient shine effect */
+.project-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease-in-out;
+}
+
+/* Hover effects */
+.project-title:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+    letter-spacing: 2px; /* Expands text slightly */
+}
+
+.project-title:hover::before {
+    left: 100%; /* Moves the shine effect across the text */
+}
+.button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #EAEAEA; /* Soft white for readability */
+    background: rgba(30, 42, 56, 0.85); /* Dark navy transparent */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s, letter-spacing 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 45%;
+    margin-right: 50%;
+}
+
+/* Gradient shine effect */
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease-in-out;
+}
+
+/* Hover effects */
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+    letter-spacing: 2px; /* Expands text slightly */
+}
+
+.button:hover::before {
+    left: 100%; /* Moves the shine effect across the button */
+}
